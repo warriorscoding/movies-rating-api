@@ -6,7 +6,7 @@ input.addEventListener('keyup', e => {
 })
 
 function searchMovie(query) {
-  const key = 'apikey=596c355f';
+  const key = 'apikey=596c355f'; // replace the key with your own key
   const url = `https://www.omdbapi.com/?${key}&t=${query}`;
 
   fetch(url)
@@ -41,4 +41,3 @@ function render(data) {
     `;
 
 }
-
